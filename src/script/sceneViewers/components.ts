@@ -1,4 +1,4 @@
-class DivBase {
+abstract class DivBase {
   protected _div:HTMLDivElement;
 
   constructor() {
@@ -8,20 +8,26 @@ class DivBase {
   get element():HTMLDivElement {
     return this._div;
   }
+
 }
 
 
-class WindowBase extends DivBase {
+export class WindowBase extends DivBase {
 
   constructor(){
     super();
   }
 }
 
-class LabelAndValue {
-  private labelDiv:HTMLDivElement = new DivBase();
-  private valueDiv:HTMLDivElement = new DivBase();
+class LabelAndValue extends DivBase {
+  private _labelString:string;
+  private _valueString:string;
+
   constructor(label:string, value:number|string) {
-    
+    super();
+    this._labelString = label;
+    this._valueString = String(value);
   }
+  
 }
+

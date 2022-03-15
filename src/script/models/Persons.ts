@@ -1,12 +1,13 @@
+
 /**
  * enum Sex 性別
  */
-enum Sex {
+ export enum Sex {
   male,
   female
 }
 
-/**
+/** ************************************************************
  * 性器基底クラス
  */
 class GenitalBase {
@@ -21,7 +22,7 @@ class GenitalBase {
   }
 }
 
-/**
+/** ************************************************************
  * 女性器
  */
 class FemaleGenital extends GenitalBase {
@@ -30,7 +31,7 @@ class FemaleGenital extends GenitalBase {
   }
 }
 
-/**
+/** ************************************************************
  * 男性器
  */
 class MaleGenital extends GenitalBase {
@@ -40,7 +41,7 @@ class MaleGenital extends GenitalBase {
 }
 
 
-/**
+/** ************************************************************
  * Money 所持金クラス
  */
 export class Money {
@@ -82,7 +83,7 @@ export class Money {
 }
 
 
-/**
+/** ************************************************************
  * PersonBase 登場人物の基底クラス
  */
 class PersonBase {
@@ -110,7 +111,7 @@ class PersonBase {
 }
 
 
-/**
+/** ************************************************************
  * プレイヤーキャラクター
  */
 export class PlayerCharacter extends PersonBase {
